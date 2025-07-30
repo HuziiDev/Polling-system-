@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("https://polling-backend-liart.vercel.app");
+const socket = io("https://polling-system-g8ml.onrender.com");
 
 function useUniqueStudentName() {
   const [name, setName] = useState(() => sessionStorage.getItem("studentName") || "");
